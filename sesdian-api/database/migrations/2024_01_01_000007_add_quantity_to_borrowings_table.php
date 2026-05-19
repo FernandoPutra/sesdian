@@ -8,7 +8,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::table('borrowings', function (Blueprint $table) {
-            $table->unsignedInteger('quantity')->default(1)->after('asset_id');
+            $table->unsignedInteger('quantity')->default(1);
         });
     }
 
