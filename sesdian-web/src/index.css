@@ -87,4 +87,8 @@ a { color: var(--primary); text-decoration: none; }
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+  :root { font-size: 14px; }
+}
 }

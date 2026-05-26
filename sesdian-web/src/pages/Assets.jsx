@@ -93,7 +93,7 @@ export default function Assets() {
       </div>
 
       {/* Stats */}
-      <div className="animate-fade-up delay-2" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(130px,1fr))', gap:'0.75rem', marginBottom:'1.25rem' }}>
+      <div className="animate-fade-up delay-2" style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(120px,1fr))', gap:'0.75rem', marginBottom:'1.25rem' }}>
         {stats.map(s => (
           <div key={s.label} style={{ background:s.bg, borderRadius:12, padding:'0.875rem 1rem', borderLeft:`4px solid ${s.color}` }}>
             <div style={{ fontSize:'1.5rem', fontWeight:800, color:s.color }}>{s.value}</div>

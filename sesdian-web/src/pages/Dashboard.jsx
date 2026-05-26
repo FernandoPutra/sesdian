@@ -86,7 +86,7 @@ export default function Dashboard() {
       </div>
 
       {/* Top stat cards */}
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(180px,1fr))', gap:'1rem', marginBottom:'1.5rem' }}>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(140px,1fr))', gap:'0.75rem', marginBottom:'1.5rem' }}>
         {loading ? [1,2,3,4,5].map(i => <div key={i} className="skeleton" style={{ height:110, borderRadius:16 }} />) :
           topCards.map((c, i) => (
             <div key={c.label} className={`animate-fade-up delay-${i+1}`}

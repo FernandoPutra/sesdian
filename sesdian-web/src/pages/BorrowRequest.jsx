@@ -144,6 +144,7 @@ export default function BorrowRequest() {
 
   const availCount   = assets.filter(a => a.status === 'available').length
   const unavailCount = assets.filter(a => a.status !== 'available').length
+const isNarrow = window.innerWidth < 768
 
   return (
     <div>
@@ -158,7 +159,7 @@ export default function BorrowRequest() {
         </div>
       </div>
 
-      <div style={{ display:'grid', gridTemplateColumns:'1fr 380px', gap:'1.5rem', alignItems:'start' }}>
+    <div style={{ display:'grid', gridTemplateColumns: window.innerWidth < 768 ? '1fr' : '1fr 340px', gap:'1.25rem', alignItems:'start' }}>
 
         {/* ── LEFT: Pilih Aset ── */}
         <div>
